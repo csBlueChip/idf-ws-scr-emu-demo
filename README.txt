@@ -1,24 +1,31 @@
-To use this repo
-================
+RUN THE GAME
+============
 
-You may need to install the compiler:
+1) You may need to install the compiler [gcc]:
 	sudo apt install build-essential
 
-Compile the emulator:
-	make all
+2) Run the game:
+	bash boast.sh
 
-Run the game:
-	./boast.sh
 
-To create distributable tarball
-===============================
+NOTES
+=====
 
-Create:
-	make distclean local tarball
+The first time you run the game, it will (need to) compile the emulator
+(takes about 5 seconds)
+
+You may optionally tidy up (erase the intermediate files and leave only the exe)
+	make tidy
+
 
 To create this repo
 ===================
 
-Create:
-	make distclean local
+make distclean local
+
+
+To create distributable tarball
+===============================
+
+make tarball
 

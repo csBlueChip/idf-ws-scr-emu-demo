@@ -75,6 +75,9 @@ tarball: local
 	tar czf $(TAR) Makefile $(CSRC) $(SCRS) $(SDAT) $(TARX) $$(xargs -r -n1 basename < $(HLST))
 
 # --- tidy
+tidy:
+	rm -f $(OBJ) $(DEP) $(HLST)
+
 clean:
 	rm -f $(EXE) $(OBJ) $(DEP)
 
