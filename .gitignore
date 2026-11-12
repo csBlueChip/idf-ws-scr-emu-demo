@@ -1,0 +1,8 @@
+# state files
+*.var
+
+.headers
+*.d
+*.o
+*.gz
+scrtest
